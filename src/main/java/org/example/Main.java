@@ -97,5 +97,13 @@ public class Main {
         Especialidad especialidad = new Especialidad(nombre, clave);
         System.out.println("Especialidad agregada exitosamente.");
     }
-
+    public static void agregarAlumno() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nombre del Alumno: ");
+        String nombre = scanner.nextLine();
+        System.out.print("Matrícula del Alumno: ");
+        String matricula = scanner.nextLine();
+        Alumno alumno = new Alumno(nombre, matricula);
+        System.out.println("Alumno agregado exitosamente.");
+    }
 }
