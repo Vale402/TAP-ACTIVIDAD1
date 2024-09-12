@@ -70,4 +70,13 @@ public class Main {
         Materia materia = new Materia(nombre, clave);
         System.out.println("Materia agregada exitosamente.");
     }
+    public static void agregarCatedratico() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nombre del Catedrático: ");
+        String nombre = scanner.nextLine();
+        System.out.print("ID del Catedrático: ");
+        String id = scanner.nextLine();
+        Catedratico catedratico = new Catedratico(nombre, id);
+        System.out.println("Catedrático agregado exitosamente.");
+    }
 }
