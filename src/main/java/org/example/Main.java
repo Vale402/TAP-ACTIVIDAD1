@@ -79,4 +79,14 @@ public class Main {
         Catedratico catedratico = new Catedratico(nombre, id);
         System.out.println("Catedrático agregado exitosamente.");
     }
+    public static void agregarGrupo() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nombre del Grupo: ");
+        String nombre = scanner.nextLine();
+        System.out.print("Clave del Grupo: ");
+        String clave = scanner.nextLine();
+        Grupo grupo = new Grupo(nombre, clave);
+        System.out.println("Grupo agregado exitosamente.");
+    }
+
 }
