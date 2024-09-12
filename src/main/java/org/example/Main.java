@@ -88,5 +88,14 @@ public class Main {
         Grupo grupo = new Grupo(nombre, clave);
         System.out.println("Grupo agregado exitosamente.");
     }
+    public static void agregarEspecialidad() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nombre de la Especialidad: ");
+        String nombre = scanner.nextLine();
+        System.out.print("Clave de la Especialidad: ");
+        String clave = scanner.nextLine();
+        Especialidad especialidad = new Especialidad(nombre, clave);
+        System.out.println("Especialidad agregada exitosamente.");
+    }
 
 }
