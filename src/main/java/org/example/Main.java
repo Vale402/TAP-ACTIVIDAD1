@@ -24,7 +24,7 @@ public class Main {
 
             switch(opcion) {
                 case 1:
-                    agregarMateria();
+                    Materia.agregarMateria();
                     break;
                 case 2:
                     Materia.mostrarMaterias();
@@ -61,15 +61,7 @@ public class Main {
             }
         }
     }
-    public static void agregarMateria() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Nombre de la Materia: ");
-        String nombre = scanner.nextLine();
-        System.out.print("Clave de la Materia: ");
-        String clave = scanner.nextLine();
-        Materia materia = new Materia(nombre, clave);
-        System.out.println("Materia agregada exitosamente.");
-    }
+
     public static void agregarCatedratico() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nombre del Catedrático: ");
