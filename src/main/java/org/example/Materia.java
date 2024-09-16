@@ -1,10 +1,12 @@
 package org.example;
+
+import java.util.Scanner;
+
 public class Materia {
     private String nombre;
     private String clave;
     public static Materia[] listaMaterias = new Materia[100];
     private static int contador = 0;
-
 
     public Materia(String nombre, String clave) {
         this.nombre = nombre;
@@ -52,5 +54,14 @@ public class Materia {
         for (int i = 0; i < contador; i++) {
             System.out.println(listaMaterias[i].getNombre() + " - " + listaMaterias[i].getClave());
         }
+    }
+    public static void agregarMateria() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nombre de la Materia: ");
+        String nombre = scanner.nextLine();
+        System.out.print("Clave de la Materia: ");
+        String clave = scanner.nextLine();
+        Materia materia = new Materia(nombre, clave);
+        System.out.println("Materia agregada exitosamente.");
     }
 }
