@@ -50,4 +50,14 @@ public class Especialidad {
             System.out.println(listaEspecialidades[i].getNombre() + " - " + listaEspecialidades[i].getClave());
         }
     }
+
+    public static void agregarEspecialidad() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nombre de la Especialidad: ");
+        String nombre = scanner.nextLine();
+        System.out.print("Clave de la Especialidad: ");
+        String clave = scanner.nextLine();
+        Especialidad especialidad = new Especialidad(nombre, clave);
+        System.out.println("Especialidad agregada exitosamente.");
+    }
 }
