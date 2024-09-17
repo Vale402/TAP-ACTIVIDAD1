@@ -24,6 +24,7 @@ public class Grupo {
         return clave;
     }
 
+
     public static void mostrarGrupos() {
         for (int i = 0; i < contador; i++) {
             System.out.println(listaGrupos[i].getNombre() + " - " + listaGrupos[i].getClave());
