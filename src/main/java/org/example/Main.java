@@ -30,7 +30,7 @@ public class Main {
                     Materia.mostrarMaterias();
                     break;
                 case 3:
-                    agregarCatedratico();
+                    Catedratico.agregarCatedratico();
                     break;
                 case 4:
                     Catedratico.mostrarCatedraticos();
