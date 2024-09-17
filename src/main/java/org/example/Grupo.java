@@ -1,4 +1,5 @@
 package org.example;
+import java.util.Scanner;
 
 public class Grupo {
     private String nombre;
@@ -52,5 +53,13 @@ public class Grupo {
             System.out.println(listaGrupos[i].getNombre() + " - " + listaGrupos[i].getClave());
         }
     }
-
+    public static void agregarGrupo() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nombre del Grupo: ");
+        String nombre = scanner.nextLine();
+        System.out.print("Clave del Grupo: ");
+        String clave = scanner.nextLine();
+        Grupo grupo = new Grupo(nombre, clave);
+        System.out.println("Grupo agregado exitosamente.");
+    }
 }
