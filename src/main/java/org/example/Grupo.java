@@ -1,4 +1,5 @@
 package org.example;
+import java.util.Scanner;
 
 public class Grupo {
     private String nombre;
@@ -20,14 +21,45 @@ public class Grupo {
         return nombre;
     }
 
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
     public String getClave() {
         return clave;
     }
+    public void setclave(String clave){
+        this.clave = clave;
+    }
 
+
+    public static Grupo[] getListaGrupos() {
+        return listaGrupos;
+    }
+
+    public static void setListaGrupos(Grupo[] listaGrupos) {
+        Grupo.listaGrupos = listaGrupos;
+    }
+
+    public static int getContador() {
+        return contador;
+    }
+
+    public static void setContador(int contador) {
+        Grupo.contador = contador;
+    }
 
     public static void mostrarGrupos() {
         for (int i = 0; i < contador; i++) {
             System.out.println(listaGrupos[i].getNombre() + " - " + listaGrupos[i].getClave());
         }
+    }
+    public static void agregarGrupo() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nombre del Grupo: ");
+        String nombre = scanner.nextLine();
+        System.out.print("Clave del Grupo: ");
+        String clave = scanner.nextLine();
+        Grupo grupo = new Grupo(nombre, clave);
+        System.out.println("Grupo agregado exitosamente.");
     }
 }
