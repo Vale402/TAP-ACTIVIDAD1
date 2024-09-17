@@ -36,13 +36,13 @@ public class Main {
                     Catedratico.mostrarCatedraticos();
                     break;
                 case 5:
-                    agregarGrupo();
+                    Grupo.agregarGrupo();
                     break;
                 case 6:
                     Grupo.mostrarGrupos();
                     break;
                 case 7:
-                    agregarEspecialidad();
+                    Especialidad.agregarEspecialidad();
                     break;
                 case 8:
                     Especialidad.mostrarEspecialidades();
@@ -71,24 +71,8 @@ public class Main {
         Catedratico catedratico = new Catedratico(nombre, id);
         System.out.println("Catedrático agregado exitosamente.");
     }
-    public static void agregarGrupo() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Nombre del Grupo: ");
-        String nombre = scanner.nextLine();
-        System.out.print("Clave del Grupo: ");
-        String clave = scanner.nextLine();
-        Grupo grupo = new Grupo(nombre, clave);
-        System.out.println("Grupo agregado exitosamente.");
-    }
-    public static void agregarEspecialidad() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Nombre de la Especialidad: ");
-        String nombre = scanner.nextLine();
-        System.out.print("Clave de la Especialidad: ");
-        String clave = scanner.nextLine();
-        Especialidad especialidad = new Especialidad(nombre, clave);
-        System.out.println("Especialidad agregada exitosamente.");
-    }
+
+
     public static void agregarAlumno() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nombre del Alumno: ");
