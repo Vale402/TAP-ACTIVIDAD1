@@ -1,4 +1,5 @@
 package org.example;
+import java.util.Scanner;
 public class Especialidad {
     private String nombre;
     private String clave;
