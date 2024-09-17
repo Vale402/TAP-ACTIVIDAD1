@@ -1,6 +1,8 @@
 package org.example;
 import java.util.Scanner;
 
+import static org.example.Alumno.agregarAlumno;
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -48,7 +50,7 @@ public class Main {
                     Especialidad.mostrarEspecialidades();
                     break;
                 case 9:
-                    agregarAlumno();
+                    Alumno.agregarAlumno();
                     break;
                 case 10:
                     Alumno.mostrarAlumnos();
@@ -73,13 +75,4 @@ public class Main {
     }
 
 
-    public static void agregarAlumno() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Nombre del Alumno: ");
-        String nombre = scanner.nextLine();
-        System.out.print("Matrícula del Alumno: ");
-        String matricula = scanner.nextLine();
-        Alumno alumno = new Alumno(nombre, matricula);
-        System.out.println("Alumno agregado exitosamente.");
-    }
 }
