@@ -39,6 +39,14 @@ public class Controlador {
                 vista.mostrarEspecialidades(modelo.obtenerEspecialidades());
             }
         });
+
+        // Acción para el botón de materias
+        this.vista.btnMaterias.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                vista.mostrarMaterias(modelo.obtenerMaterias());
+            }
+        });
     }
 
     public void iniciarVista() {
