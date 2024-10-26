@@ -20,7 +20,7 @@ public class Vista extends JFrame {
     public Vista() {
         setTitle("Gestión Escolar");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(600, 600);
+        setSize(600, 500);
         setLayout(new BorderLayout());
         setLocationRelativeTo(null);  // Centra la ventana
 
